@@ -3,60 +3,53 @@ import React from "react";
 function Intro() {
   return (
     <div
-      style={{
-        backgroundImage: `url(src/assets/banner_wallpaper.svg)`,
-        backgroundSize: "cover",
-      }}
-      className="flex items-center"
+      name="home"
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-950"
     >
-      <div className="w-full flex justify-center text-white">
-        <div className="w-2/3 ms-10">
-          <h3 className="text-3xl font-semibold">Hi, I am</h3>
-          <h1 className=" mt-3 text-5xl font-bold">Meet Kothari</h1>
-          <h2 className="mt-3 text-2xl">I am Developer</h2>
-          <p className="mt-3">
-          I build web and mobile apps using tools like MERN stack and Flutter. I love creating easy-to-use and reliable applications for everyone.
+
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <div className="flex flex-col justify-center h-full">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+            I'm a Software Developer
+          </h2>
+          <p className="text-gray-500 py-4 max-w-md">
+            I build web and mobile apps using tools like MERN stack and Flutter.
+            I love creating easy-to-use and reliable applications for everyone.
           </p>
+
           <div className="mt-4 flex gap-5 text-4xl">
-            <a className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <a title="Leetcode Profile" className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
             <i class="fa-solid fa-code"></i>
             </a>
 
-            <a className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <a title="LinkedIn Profile" className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
               <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <a href="https://github.com/Meet9292/" title="GitHub Profile" target="_blank"  className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
               <i class="fa-brands fa-github"></i>
             </a>
+
+            <a href= "public/21CS023-Meet Kothari.pdf" title="Resume Profile" download className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <i class="fa-solid fa-file"></i>
+            </a>
+
           </div>
-          <br />
-          <br />
-          <a
-            className="text-2xl px-4 py-3 bg-orange-500 rounded-full shadow"
-            href="/contact"
-          >
-            Contact me
-          </a>
+
         </div>
-      </div>
-      <div className="w-full flex justify-center">
-        <img
-          className="rounded-full shadow-lg w-fit"
-          src="src/assets/1.jpg"
-          alt=""
-        />
+
+        
+
+        <div>
+          <img
+            src="src/assets/3.jpg"
+            alt="my profile"
+            className="rounded-2xl mx-auto w-2/3 md:w-full"
+          />
+        </div>
       </div>
     </div>
   );
 }
 
 export default Intro;
-
-
-
-

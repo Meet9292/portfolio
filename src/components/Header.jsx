@@ -1,27 +1,92 @@
-import React from 'react'
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Header() {
+
+  const [nav, setNav] = useState(false);
+
+  const links = [
+    {
+      id: 1,
+      link: "home",
+    },
+    {
+      id: 2,
+      link: "about",
+    },
+    {
+      id: 3,
+      link: "services",
+    },
+    {
+      id: 4,
+      link: "skills",
+    },
+    {
+      id: 5,
+      link: "projects",
+    },
+    {
+      id: 6,
+      link: "contact",
+    }
+  ];
+  
   return (
-    <div className='border h-20 items-center flex justify-between px-16 bg-gray-200'>
-        <div className='text-2xl font-bold'>
-            <h1>Meet Kothari</h1>
-        </div>
+    <div className="flex justify-between items-center w-full h-20 px-4 bg-black fixed text-white">
+      <div>
+        <h1 className="text-5xl font-signature ml-2 hover:scale-105 hover:text-orange-600 duration-200">Meet Kothari</h1>
+      </div>
 
-        <div className='flex gap-6'>
-            <a href="/home" className='hover:text-orange-600'>Home</a>
-            <a href="/about" className='hover:text-orange-600'>About</a>
-            <a href="/skills" className='hover:text-orange-600'>Skills</a>
-            <a href="/portfolio" className='hover:text-orange-600'>Portfolio</a>
-            <a href="/contact" className='hover:text-orange-600'>Contact</a>
-        </div>
+      <ul className="hidden md:flex">
 
-        <div>
-            <button className='px-4 py-2 bg-orange-500 rounded-full shadow'>Hire me</button>
-        </div>
+        {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize font-medium hover:scale-110 hover:text-orange-600 duration-200"
+          >
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
+          </li>
+        ))}
 
+      </ul>
+
+        
+
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+      >
+        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+      </div>
+
+      {nav && (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            >
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+
+        </ul>
+      )}
     </div>
-  )
+  );
 }
 
 export default Header
+
 
