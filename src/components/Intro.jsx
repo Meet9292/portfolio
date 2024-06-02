@@ -15,9 +15,7 @@ function Intro() {
           <h1 className=" mt-3 text-5xl font-bold">Meet Kothari</h1>
           <h2 className="mt-3 text-2xl">I am Developer</h2>
           <p className="mt-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
-            nihil rerum culpa saepe quae optio! Tempora dolores excepturi saepe
-            fugit.
+          I build web and mobile apps using tools like MERN stack and Flutter. I love creating easy-to-use and reliable applications for everyone.
           </p>
           <div className="mt-4 flex gap-5 text-4xl">
             <a className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
