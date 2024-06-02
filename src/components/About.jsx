@@ -1,3 +1,6 @@
+import photo from "/src/assets/3.jpg"
+import React from "react";
+
 function About() {
     return (
         <>
@@ -11,7 +14,7 @@ function About() {
               <div className="w-full flex justify-center">
                 <img
                   className="w-fit rounded-full"
-                  src= "src/assets/3.jpg"
+                  src= {photo}
                 />
               </div>
     

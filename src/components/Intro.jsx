@@ -1,4 +1,5 @@
 import React from "react";
+import photo from "/src/assets/3.jpg"
 
 function Intro() {
   return (
@@ -42,7 +43,7 @@ function Intro() {
 
         <div>
           <img
-            src="src/assets/3.jpg"
+            src = {photo}
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
