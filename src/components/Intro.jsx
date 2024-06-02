@@ -18,11 +18,11 @@ function Intro() {
           </p>
 
           <div className="mt-4 flex gap-5 text-4xl">
-            <a title="Leetcode Profile" className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <a href="https://leetcode.com/meetkothari" target="_blank" title="Leetcode Profile" className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
             <i class="fa-solid fa-code"></i>
             </a>
 
-            <a title="LinkedIn Profile" className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <a href="https://www.linkedin.com/in/meetkothari092/" target="_blank" title="LinkedIn Profile" className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
               <i class="fa-brands fa-linkedin"></i>
             </a>
 
