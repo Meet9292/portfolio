@@ -3,7 +3,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 function Header() {
-
   const [nav, setNav] = useState(false);
 
   const links = [
@@ -34,27 +33,25 @@ function Header() {
   ];
   
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-black fixed text-white">
+    <div className="flex justify-between items-center w-full h-24 px-4 bg-black fixed text-white">
       <div>
-        <h1 className="text-5xl font-signature ml-2 hover:scale-105 hover:text-orange-600 duration-200">Meet Kothari</h1>
+        <h1 className="text-5xl font-signature ml-2 hover:scale-105 hover:text-orange-600 duration-200">
+          Meet Kothari
+        </h1>
       </div>
 
-      <ul className="hidden md:flex">
-
+      <ul className="hidden md:flex space-x-4">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium hover:scale-110 hover:text-orange-600 duration-200"
+            className="cursor-pointer capitalize font-medium hover:scale-110 hover:text-orange-600 duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}
             </Link>
           </li>
         ))}
-
       </ul>
-
-        
 
       <div
         onClick={() => setNav(!nav)}
@@ -68,7 +65,7 @@ function Header() {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="cursor-pointer capitalize py-6 text-4xl"
             >
               <Link
                 onClick={() => setNav(!nav)}
@@ -80,13 +77,10 @@ function Header() {
               </Link>
             </li>
           ))}
-
         </ul>
       )}
     </div>
   );
 }
 
-export default Header
-
-
+export default Header;
