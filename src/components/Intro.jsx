@@ -29,7 +29,7 @@ function Intro() {
               <i className="fa-brands fa-github"></i>
             </a>
 
-            <a href="/public/21CS023-Meet Kothari.pdf" title="Resume Profile" download className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
+            <a href="/21CS023-Meet Kothari.pdf" title="Resume Profile" download className="border hover:bg-orange-500 cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-800">
               <i className="fa-solid fa-file"></i>
             </a>
           </div>
