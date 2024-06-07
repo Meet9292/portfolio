@@ -21,13 +21,13 @@ function Services() {
             I build the behind-the-scenes parts of websites and apps. Using Node.js and Express, I make sure everything runs smoothly and can handle lots of users.
           </p>
         </div>
-        <div className="cursor-pointer hover:bg-gray-600 space-y-3 bg-slate-700 p-5 text-center shadow-lg rounded-xl">
+        {/* <div className="cursor-pointer hover:bg-gray-600 space-y-3 bg-slate-700 p-5 text-center shadow-lg rounded-xl">
           <i className=" text-5xl fa-solid fa-mobile"></i>
           <h1 className="text-4xl">Flutter Development</h1>
           <p>
             I develop mobile apps that work on both iOS and Android using Flutter. This allows me to create apps that look great and work perfectly on any phone or tablet.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
